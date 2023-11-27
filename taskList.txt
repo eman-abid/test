@@ -2,3 +2,6 @@ list of colors;
  red blue
 
 green and pink
+ prple 
+gray 
+ yellow
