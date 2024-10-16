@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
     <title>ToDo App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .task-list {
+            margin-top: 20px;
+        }
+
+        .task {
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: .25rem;
+            padding: 10px;
+        }
+
+        .task .content {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>ToDO List</h1>
-        <form id="task-form">
-            <input type="text" 
-               id="task-input" 
-               placeholder="Lets Get Things Done!!">
-            <input type="submit" 
-               id="task-submit"
-               value="Add Task">
+    <header class="bg-primary text-white text-center py-4">
+        <h1>ToDo List</h1>
+        <form id="task-form" class="mt-4">
+            <div class="form-group">
+                <input type="text" id="task-input" class="form-control" placeholder="Let's Get Things Done!!">
+            </div>
+            <button type="submit" id="task-submit" class="btn btn-light">Add Task</button>
         </form>
     </header>
 
-<main>
-    <section class="task-list">
-
-        <h2>Tasks</h2>
-
-        <div class="tasks">
-
-            <div class="task">
-                <div class="content">
-                    <input type="text" class="test" value="my task" readonly>
-                </div> 
-
-                <div class="action">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
+    <main class="container mt-4">
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <div class="tasks">
+                <div class="task card">
+                    <div class="card-body">
+                        <div class="content">
+                            <input type="text" class="form-control" value="my task" readonly>
+                        </div>
+                        <div class="action text-right">
+                            <button class="btn btn-warning btn-sm">Edit</button>
+                            <button class="btn btn-warning btn-sm">update</button>
+                            <button class="btn btn-warning btn-sm">//////////////</button>
+                            <button class="btn btn-danger btn-sm">Delete</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
-<script src="main.js"></script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
