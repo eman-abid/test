@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,31 +12,29 @@
         .task-list {
             margin-top: 20px;
         }
+
         .task {
             margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: .25rem;
             padding: 10px;
         }
+
         .task .content {
             margin-bottom: 10px;
         }
     </style>
 </head>
+
 <body>
 
     <header class="bg-primary text-white text-center py-4">
         <h1>ToDo List</h1>
         <form id="task-form" class="mt-4">
             <div class="form-group">
-                <input type="text" 
-                   id="task-input" 
-                   class="form-control" 
-                   placeholder="Let's Get Things Done!!">
+                <input type="text" id="task-input" class="form-control" placeholder="Let's Get Things Done!!">
             </div>
-            <button type="submit" 
-                id="task-submit" 
-                class="btn btn-light">Add Task</button>
+            <button type="submit" id="task-submit" class="btn btn-light">Add Task</button>
         </form>
     </header>
 
@@ -47,9 +46,10 @@
                     <div class="card-body">
                         <div class="content">
                             <input type="text" class="form-control" value="my task" readonly>
-                        </div> 
+                        </div>
                         <div class="action text-right">
                             <button class="btn btn-warning btn-sm">Edit</button>
+                            <button class="btn btn-warning btn-sm">update</button>
                             <button class="btn btn-danger btn-sm">Delete</button>
                         </div>
                     </div>
@@ -64,4 +64,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
